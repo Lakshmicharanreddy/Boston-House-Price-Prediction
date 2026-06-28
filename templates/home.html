@@ -1,3 +1,38 @@
-<h1>
-    Hello World
-</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Boston House Pricing Prediction</title>
+</head>
+<body>
+    <h1>Boston House Pricing Prediction</h1>
+
+    <!-- The form must send a POST request to the /predict route -->
+    <form action="{{ url_for('predict') }}" method="post">
+        
+        <!-- Input fields for all 13 independent features -->
+        <input type="text" name="crim" placeholder="CRIM" required="required" />
+        <input type="text" name="zn" placeholder="ZN" required="required" />
+        <input type="text" name="indus" placeholder="INDUS" required="required" />
+        <input type="text" name="chas" placeholder="CHAS" required="required" />
+        <input type="text" name="nox" placeholder="NOX" required="required" />
+        <input type="text" name="rm" placeholder="RM" required="required" />
+        <input type="text" name="age" placeholder="AGE" required="required" />
+        <input type="text" name="dis" placeholder="DIS" required="required" />
+        <input type="text" name="rad" placeholder="RAD" required="required" />
+        <input type="text" name="tax" placeholder="TAX" required="required" />
+        <input type="text" name="ptratio" placeholder="PTRATIO" required="required" />
+        <input type="text" name="b" placeholder="B" required="required" />
+        <input type="text" name="lstat" placeholder="LSTAT" required="required" />
+
+        <!-- The predict button that submits the form -->
+        <button type="submit">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    
+    <!-- The placeholder variable inside double flower brackets that Flask will replace with the output -->
+    <h2>{{ prediction_text }}</h2>
+
+</body>
+</html>
