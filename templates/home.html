@@ -10,19 +10,19 @@
     <form action="{{ url_for('predict') }}" method="post">
         
         <!-- Input fields for all 13 independent features -->
-        <input type="text" name="crim" placeholder="CRIM" required="required" />
-        <input type="text" name="zn" placeholder="ZN" required="required" />
-        <input type="text" name="indus" placeholder="INDUS" required="required" />
-        <input type="text" name="chas" placeholder="CHAS" required="required" />
-        <input type="text" name="nox" placeholder="NOX" required="required" />
-        <input type="text" name="rm" placeholder="RM" required="required" />
-        <input type="text" name="age" placeholder="AGE" required="required" />
-        <input type="text" name="dis" placeholder="DIS" required="required" />
-        <input type="text" name="rad" placeholder="RAD" required="required" />
-        <input type="text" name="tax" placeholder="TAX" required="required" />
-        <input type="text" name="ptratio" placeholder="PTRATIO" required="required" />
-        <input type="text" name="b" placeholder="B" required="required" />
-        <input type="text" name="lstat" placeholder="LSTAT" required="required" />
+        <input type="text" name="crim" placeholder="Crime Rate" required="required" />
+        <input type="text" name="zn" placeholder="Residential Land Ratio" required="required" />
+        <input type="text" name="indus" placeholder="Industrial Area Ratio" required="required" />
+        <input type="text" name="chas" placeholder="Near Charles River" required="required" />
+        <input type="text" name="nox" placeholder="Pollution Level" required="required" />
+        <input type="text" name="rm" placeholder="Average Rooms" required="required" />
+        <input type="text" name="age" placeholder="Building Age" required="required" />
+        <input type="text" name="dis" placeholder="Distance to Employment Centers" required="required" />
+        <input type="text" name="rad" placeholder="Highway Accessibility" required="required" />
+        <input type="text" name="tax" placeholder="Property Tax Rate" required="required" />
+        <input type="text" name="ptratio" placeholder="Student-Teacher Ratio" required="required" />
+        <input type="text" name="b" placeholder="Neighborhood Diversity Index" required="required" />
+        <input type="text" name="lstat" placeholder="Lower Income Population %" required="required" />
 
         <!-- The predict button that submits the form -->
         <button type="submit">Predict</button>
